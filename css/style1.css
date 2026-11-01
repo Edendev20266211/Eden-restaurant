@@ -1,0 +1,331 @@
+
+/* =================================
+   1. GENERAL STYLING
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f6f0;
+    color: #333;
+}
+
+/* =================================
+   2. HEADER AND NAVIGATION
+================================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #173b2e;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #d6ad60;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #d6ad60;
+}
+
+.nav-button a {
+    background-color: #d6ad60;
+    color: #173b2e;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-button a:hover {
+    background-color: white;
+}
+
+/* =================================
+   3. ABOUT PAGE
+================================= */
+
+#about-page {
+    background-color: #f8f6f0;
+}
+
+/* ABOUT HERO SECTION */
+
+.about-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 60px;
+}
+
+/* ABOUT CONTENT */
+
+.about-content {
+    flex: 1;
+}
+
+.about-label {
+    color: #b58b45;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.about-content h1 {
+    color: #173b2e;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.about-content h1 span {
+    color: #c18e3c;
+}
+
+.about-content p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* ABOUT BUTTON */
+
+.about-content a {
+    display: inline-block;
+    background-color: #173b2e;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.about-content a:hover {
+    background-color: #d6ad60;
+    color: #173b2e;
+}
+
+/* ABOUT IMAGE */
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* =================================
+   4. MISSION AND VISION
+================================= */
+
+.mission-vision {
+    padding: 70px 60px;
+    background-color: white;
+}
+
+/* SECTION HEADING */
+
+.about-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-heading h2 {
+    color: #173b2e;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.about-heading p {
+    color: #777;
+    line-height: 1.8;
+}
+
+/* MISSION AND VISION GRID */
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* CARDS */
+
+.about-card {
+    background-color: #f8f6f0;
+    padding: 35px;
+    border-radius: 12px;
+    border-left: 5px solid #d6ad60;
+    transition: 0.3s;
+}
+
+.about-card h3 {
+    color: #173b2e;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* =================================
+   5. FOOTER
+================================= */
+
+.footer {
+    background-color: #173b2e;
+    color: white;
+    padding: 60px 60px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-brand,
+.footer-links,
+.footer-contact {
+    flex: 1;
+}
+
+.footer-brand h2 {
+    margin-bottom: 15px;
+}
+
+.footer-brand h2 span {
+    color: #d6ad60;
+}
+
+.footer h3 {
+    color: #d6ad60;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d6ad60;
+}
+
+.footer-bottom {
+    border-top: 1px solid #496457;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* =================================
+   6. RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* ABOUT HERO */
+    .about-hero {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about-content h1 {
+        font-size: 32px;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    /* MISSION AND VISION */
+    .mission-vision {
+        padding: 40px 20px;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
